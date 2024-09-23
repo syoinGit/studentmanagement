@@ -18,14 +18,16 @@ repositories {
     mavenCentral()
 }
 
-
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+
+// 便利機能、ユーティリティ
     implementation 'org.apache.commons:commons-lang3:3.14.0'
+// MySQLドライバ
+    runtimeOnly 'com.mysql:mysql-connector-j'
 
-    runtimeOnly 'com.mysql:mysql-connector-j'  // 正しいMySQL Connectorの依存関係
-    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'  // MyBatis
-
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
