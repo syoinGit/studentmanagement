@@ -27,6 +27,8 @@ public class StudentService {
 
   }
 
+  // 課題
+
   public List<StudentCourse> searchStudentCourse() {
     List<StudentCourse> studentCoursesList = repository.searchStudentCourse();
 
